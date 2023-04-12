@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  width: 100%;
+  background: linear-gradient(45deg, rgb(47 46 46),rgb(51 47 47),rgb(13 12 12) ,rgb(51 44 44), #3f2b2b);
+  color: yellow;
+}

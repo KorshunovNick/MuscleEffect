@@ -1,0 +1,72 @@
+.mainBack{
+    margin-left: 25px;
+}
+.body-map {
+    padding: 50px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.body-map>svg{
+    width: 50%;
+}
+
+.body-map__container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.body-map__body {
+    height: 800px
+}
+
+.body-map__model {
+    color:yellow;
+}
+
+.body-map__muscle {
+    color: transparent;
+    transition: color 25ms ease-in-out
+}
+
+.body-map__muscle:hover {
+    color: red;
+    cursor: pointer
+}
+.contur {
+    color: yellow;
+}
+@media screen and (max-width: 900px) {
+    .body-map{
+        display: block;
+        text-align: center;
+    }
+    .body-map__body {
+        height:650px
+    }
+}
+@media screen and (max-width: 600px) {
+    .body-map__body {
+        height:650px
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .body-map__body {
+        height:650px
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .body-map__body {
+        height:600px
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .body-map__body {
+        height:500px
+    }
+} 
