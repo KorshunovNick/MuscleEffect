@@ -1,0 +1,83 @@
+.form {
+  padding: 20px;
+  width: 500px;
+  border: 1px solid yellow;
+  font-weight: bold;
+  font-size: 20px;
+}
+.form > div {
+  margin-bottom: 12px;
+}
+.form_radio {
+  margin-bottom: 10px;
+}
+.form_radio input[type="radio"] {
+  display: none;
+}
+.form_radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+.form_radio label:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: url(/src/styles/img/unchecked.png);
+  background-size: contain;
+}
+
+.form_radio input[type="radio"]:checked + label:before {
+  background: url(/src/styles/img/check.png);
+  background-size: contain;
+  color: white;
+}
+
+.form_radio label:hover:before {
+  filter: brightness(120%);
+}
+input {
+  width: 50px;
+  outline: none;
+  border: 1px solid yellow;
+  background: transparent;
+  color: yellow;
+  padding: 3px;
+  margin-left: 10px;
+  text-align: center;
+}
+select {
+  width: 400px;
+  outline: none;
+  border: 1px solid yellow;
+  background: transparent;
+  color: yellow;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 18px;
+}
+select:focus {
+  background-color: rgba(0, 0, 0, 0.551);
+}
+input:focus {
+  background-color: rgba(0, 0, 0, 0.551);
+}
+.button {
+  margin-top: 10px;
+  outline: none;
+  background: transparent;
+  border: 1px solid yellow;
+  color: yellow;
+}
+.button:hover{
+    background-color: yellow;
+    color: black;
+}
