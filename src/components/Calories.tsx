@@ -22,14 +22,14 @@ const Calories = () => {
       </div>
       <div className={styles.inputs}>
         <label htmlFor="age">Возраст</label>
-        <input type="number" id="age" required min={1} />
+        <input type="number" id="age" required min={1}  autocomplete="off" />
         <p>лет</p>
       
         <label htmlFor="weight">Вес</label>
-        <input type="number" id="weight" required min={1} />
+        <input type="number" id="weight" required min={1}  autocomplete="off" />
         <p>кг</p>
         <label htmlFor="height">Рост</label>
-        <input type="number" id="height" required min={1} />
+        <input type="number" id="height" required min={1}  autocomplete="off" />
         <p>см</p>
       </div>
       <select name="activity" id="activity" required>
@@ -51,7 +51,7 @@ const Calories = () => {
         <button type="submit" className={styles.button}>
           Расчитать
         </button>
-        <p>Cуточная норма: {ccalCount} ккал</p>
+        <p>Cуточная норма: <span className={styles.ccalResult}>{ccalCount}</span> ккал</p>
       </div>
     </form>
     </div>

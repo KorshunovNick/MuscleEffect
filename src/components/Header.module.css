@@ -31,9 +31,14 @@ ul>li{
     border-top-right-radius: 8px;
 }
 ul>li:hover {
+    background: yellow;
     color: white;
 }
 ul>li:active{
+    background: yellow;
+    color: black;
+}
+ul>.activePage{
     background: yellow;
     color: black;
 }
@@ -46,11 +51,15 @@ ul>li:active{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     position: relative;
+    cursor: pointer;
     
 }
 .menu>img{
     width: 100%;
     min-width: 24px;
+}
+menu:hover {
+    background-color: rgb(255, 255, 255);
 }
 .menuBar {
     position: absolute;
@@ -65,13 +74,25 @@ ul>li:active{
     font-weight: bold;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    cursor: pointer;
 
 }
+
+
 .menuBar>p:not(:last-child){
     border-bottom: 1px solid black;
 }
 .menuBar>p{
     padding: 3px;
+}
+.menuBar>p:hover{
+    background-color: black;
+    color: yellow;
+    cursor: pointer;
+}
+.menuBar>p:last-child{
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
 }
 
 @media screen and (max-width:1200px) {

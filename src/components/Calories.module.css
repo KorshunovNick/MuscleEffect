@@ -1,13 +1,21 @@
 .calories {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .form {
   padding: 20px;
   width: 500px;
+  min-width: 320px;
+  border-radius: 8px;
   border: 1px solid yellow;
   font-weight: bold;
   font-size: 20px;
+  
+}
+h1{
+  text-align: center;
+  color: white;
 }
 .form > div {
   margin-bottom: 12px;
@@ -18,6 +26,7 @@
 .form_radio input[type="radio"] {
   display: none;
 }
+
 .form_radio label {
   display: inline-block;
   cursor: pointer;
@@ -54,17 +63,20 @@ hr{
 }
 
 .form_radio label:hover:before {
+  color: white;
   filter: brightness(120%);
 }
 input {
-  width: 50px;
+  width: 60px;
   outline: none;
   border: 1px solid yellow;
   background: transparent;
-  color: yellow;
+  color: white;
   padding: 3px;
   margin-left: 10px;
   text-align: center;
+  font-weight:  bold;
+  letter-spacing: 2px;
 }
 .inputs {
   display: grid;
@@ -76,27 +88,39 @@ input {
 select {
   width: 100%;
   outline: none;
-  border: 1px solid yellow;
+  border: 1px solid rgba(176, 179, 3, 0.759);
   background: transparent;
-  color: yellow;
   text-decoration: none;
   padding: 5px;
   font-size: 18px;
+  color: white;
 }
 select:focus {
-  background-color: rgba(0, 0, 0, 0.551);
+  background-color: rgba(176, 179, 3, 0.759);
+  color: rgb(1, 1, 1);
 }
 input:focus {
-  background-color: rgba(0, 0, 0, 0.551);
+  background-color: rgba(0, 0, 0, 0.434);
 }
 .button {
   margin-top: 10px;
+  margin-bottom: 10px;
   outline: none;
-  background: transparent;
+  background: rgba(255, 255, 0, 0.368);
   border: 1px solid yellow;
-  color: yellow;
+  color: white;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
 }
 .button:hover{
     background-color: yellow;
     color: black;
+}
+.ccalResult {
+  color: white;
 }

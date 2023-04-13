@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header'
 import Body from './components/Body'
 import Calories from './components/Calories'
+import Exercise from './components/Exercise'
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
     <Header/>
     <Body/>
     <Calories/>
+    <Exercise/>
     </>
   )
 }
