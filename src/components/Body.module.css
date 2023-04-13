@@ -27,7 +27,7 @@
 }
 
 .body-map__muscle {
-    color: transparent;
+    color: rgba(127, 127, 35, 0.44);
     transition: color 25ms ease-in-out
 }
 
@@ -38,10 +38,16 @@
 .contur {
     color: yellow;
 }
+@media screen and (max-width: 1050px){
+    .body-map{
+        margin-top: 50px;
+    }
+}
 @media screen and (max-width: 900px) {
     .body-map{
         display: block;
         text-align: center;
+        margin-top: 50px;
     }
     .body-map__body {
         height:650px

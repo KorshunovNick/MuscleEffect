@@ -1,3 +1,7 @@
+.calories {
+  display: flex;
+  justify-content: center;
+}
 .form {
   padding: 20px;
   width: 500px;
@@ -34,7 +38,15 @@
   background: url(/src/styles/img/unchecked.png);
   background-size: contain;
 }
+.form>h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
 
+}
+hr{
+  border: 1px solid yellow;
+  margin-bottom: 15px;
+}
 .form_radio input[type="radio"]:checked + label:before {
   background: url(/src/styles/img/check.png);
   background-size: contain;
@@ -54,8 +66,15 @@ input {
   margin-left: 10px;
   text-align: center;
 }
+.inputs {
+  display: grid;
+  grid-template-columns: 20% 20% 5%;
+  row-gap: 10px;
+  column-gap: 5px;
+}
+
 select {
-  width: 400px;
+  width: 100%;
   outline: none;
   border: 1px solid yellow;
   background: transparent;
