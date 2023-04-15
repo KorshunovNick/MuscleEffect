@@ -16,7 +16,7 @@ const exercises = [
 ];
 
 const Exercises = () => {
-  // let response = fetch('http://localhost:8080/brench');
+  
 
   return (
     <div className={styles.container}>

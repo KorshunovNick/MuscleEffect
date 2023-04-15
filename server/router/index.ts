@@ -3,6 +3,6 @@ import { getExercises } from "./exercises";
 
 const router = express.Router();
 
-router.get("/ex/:muscleGroupId", getExercises);
+router.get("/", getExercises);
 
 export default router;
