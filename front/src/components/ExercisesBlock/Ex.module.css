@@ -1,0 +1,40 @@
+.ex {
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.9px;
+    border-radius: inherit;
+    
+}
+.ex>h1 {
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+    background-color:yellow ;
+    color: black;
+    text-shadow: 1px 1px 1px red,2px 2px 2px white;
+}
+.steps {
+    display: grid;
+    grid-template-columns: 3.5% 90%;
+    gap: 8px;
+
+}
+.steps>b{
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    background-color: yellow;
+    color: black;
+    margin-left: 8px;
+    font-family: 'Karla', sans-serif;
+    min-width: 10px;
+}
+@media screen and (max-width: 780px) {
+    .steps {
+        grid-template-columns:5% 90%;
+    }
+}
+@media screen and (max-width: 500px){
+    .steps {
+        grid-template-columns:7% 90%;
+    }
+}

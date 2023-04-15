@@ -22,13 +22,13 @@ const Header = () => {
       setMenu(false);
     }
   };
-  // window.onclick = (e: React.MouseEvent<HTMLDivElement>): any =>{
-  //   if (e.target == menuRef.current){
-  //     setIsOpenMenu(!isOpenMenu)
-  //   } else {
-  //     setIsOpenMenu(false)
-  //   }
-  // }
+  window.onclick = (e: React.MouseEvent<HTMLDivElement>): any =>{
+    if (e.target == menuRef.current){
+      setIsOpenMenu(!isOpenMenu)
+    } else {
+      setIsOpenMenu(false)
+    }
+  }
   // const clickHandler = (e: React.MouseEvent<HTMLDivElement>)=>{
     
   //   setIsOpenMenu(!isOpenMenu)

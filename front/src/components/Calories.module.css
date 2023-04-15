@@ -71,6 +71,7 @@ input {
   outline: none;
   border: 1px solid yellow;
   background: transparent;
+  font-family: 'Karla', sans-serif;
   color: white;
   padding: 3px;
   margin-left: 10px;
