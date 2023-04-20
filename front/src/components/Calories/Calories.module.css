@@ -13,7 +13,8 @@
   font-size: 20px;
   
 }
-h1{
+.form>h1{
+  font-size: 120%;
   text-align: center;
   color: white;
 }
@@ -99,9 +100,6 @@ select {
 select:focus {
   background-color: rgba(176, 179, 3, 0.759);
   color: rgb(1, 1, 1);
-}
-input:focus {
-  background-color: rgba(0, 0, 0, 0.434);
 }
 .button {
   margin-top: 10px;

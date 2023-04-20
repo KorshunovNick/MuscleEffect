@@ -7,13 +7,13 @@ interface ExProps {
   steps: string[];
 }
 
-const Exercise: React.FC<ExProps> = ( props ) => {
+const Exercise: React.FC<ExProps> = ( {title,steps} ) => {
   return (
     <div className={styles.ex}>
-      <h1>{props.title}</h1>
+      <h1>{title}</h1>
       <hr />
       <div className={styles.steps}>
-        {props.steps.map<any>((e, i) => (
+        {steps.map<any>((e, i) => (
           <>
             <b>{i + 1}</b> <p>{e}</p>
           </>

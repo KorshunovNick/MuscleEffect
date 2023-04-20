@@ -1,8 +1,8 @@
 import styles from "./Header.module.css";
-import biceps from "../styles/img/workout (1).png";
-import brain from "../styles/img//brain.png";
-import openMenu from "../styles/img/openMenu.png";
-import closeMenu from "../styles/img/closeMenu.png";
+import biceps from "../../styles/img/workout (1).png"
+import brain from "../../styles/img/brain.png"
+import openMenu from "../../styles/img/openMenu.png"
+import closeMenu from "../../styles/img/closeMenu.png"
 
 import { useState,useEffect,useRef } from "react";
 

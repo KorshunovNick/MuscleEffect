@@ -10,3 +10,11 @@
     width: 80%;
     min-width: 320px;
 }
+@media screen and (max-width: 600px){
+    .container {
+        padding: 10px 10px;
+    }
+    .ExGroup {
+        width: 90%;
+    }
+}

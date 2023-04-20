@@ -83,7 +83,7 @@ menu:hover {
     border-bottom: 1px solid black;
 }
 .menuBar>p{
-    padding: 3px;
+    padding: 5px;
 }
 .menuBar>p:hover{
     background-color: black;
