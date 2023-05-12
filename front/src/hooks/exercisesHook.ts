@@ -1,4 +1,5 @@
 import { getExercises } from "../api/api"
+import { useCallback, useState } from "react";
 
 interface IExercise{
     title: string
@@ -7,16 +8,15 @@ interface IExercise{
     id:string
   }
 
- export const GetExercises = {
-    exercisesFetch: [],
-    setExercises:async function(muscleGoup:string){
-        const data = await getExercises(muscleGoup)
-        this.exercisesFetch = data
+ export const GetExercises = ()=> {
+    const [muscleGroup,setMuscleGroup] = useState('lats');
+
+    const changeMuscleGroup = (event:any)=>{
+        console.log(event.target.closest('g'))
+        const link  = event.target.parentElement.getAttribute('id')
+        setMuscleGroup(link)
     }
-    ,
-    getExercisesFetch(){
-        return this.exercisesFetch
-    }
+    return {changeMuscleGroup,muscleGroup}
 }
 
 

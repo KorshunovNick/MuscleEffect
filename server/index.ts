@@ -10,7 +10,6 @@ app.use(express.json());
 
 app.use(cors());
 
-
 const main = async () => {
   const database = await connectDB();
   app.use((req, res, next) => {

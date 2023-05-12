@@ -1,15 +1,11 @@
+// import { GetExercises } from "../../hooks/exercisesHook";
 import styles from "./Body.module.css";
 
-const Body = () => {
-  const clickHendler = (
-    event: React.MouseEventHandler<MouseEvent> | React.MouseEvent<SVGSVGElement>
-  ): void => {
-    if ("target" in event) {
-      if ("parentElement" in event.target) {
-        console.log(event.target.parentElement.getAttribute("id"));
-      }
-    }
-  };
+const Body = ({changeMG}:any) => {
+
+  const changeLink = (event:any)=>{
+    changeMG(event.target.closest('g').getAttribute('id'))
+  }
 
   return (
     <div className={styles["body-map"]}>
@@ -18,7 +14,7 @@ const Body = () => {
         viewBox="0 0 673 1200"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        onClick={(e) => clickHendler(e)}
+        onClick={changeLink}
       >
         <g className={styles["body-map__muscle"]} id="abdominals">
           <path
@@ -158,7 +154,7 @@ const Body = () => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className={styles.mainBack}
-        onClick={(e) => clickHendler(e)}
+        onClick={changeLink}
       >
         <g id="hamstrings" className={styles["body-map__muscle"]}>
           <path
